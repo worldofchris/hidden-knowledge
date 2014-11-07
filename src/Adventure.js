@@ -1,4 +1,5 @@
 function Adventure(map) {
+  this.display_inline = false;
   this.map = map;
   this.root_template =
   ['{{#.}}',
@@ -18,11 +19,11 @@ function Adventure(map) {
   ].join('\n');
 
   this.content_template =
-  ['<div class="notes">{{{notes}}}</div><div class="fullsize-image"><img class="img-responsive" src="{{image}}"/></div>'
+  ['<div class="notes">{{{notes}}}</div><div class="fullsize-image"><img src="{{image}}"/></div>'
   ].join('\n');
 }
 
-// Looking at this code now I don't know why navigte is not part of Adventure
+// Looking at this code now I don't know why navigate is not part of Adventure
 // itself.
 
 function start(adventure) {
@@ -30,11 +31,24 @@ function start(adventure) {
 }
 
 function navigate(name, adventure) {
-  // Navigate to the given node
-  $(adventure.stage).html(adventure.node(name).html);
-  // Upodate the Title Header
-  $(adventure.title_header).html('<h1 id="node-title-header">' +  adventure.node(name).title  + '</h1>');
+
+  if (adventure.display_inline) {
+    // Navigate to the given node
+    $(adventure.stage).html(adventure.node(name).html);
+    // Upodate the Title Header
+    $(adventure.title_header).html('<h1 id="node-title-header">' +  adventure.node(name).title  + '</h1>');
+  }
+
+  // We want to display the large image in another window
+  if (typeof(adventure.popup) !== 'undefined') {
+    adventure.popup.setNotes(adventure.node(name).html);
+  }
+  
 }
+
+Adventure.prototype.displayInline = function(setting) {
+  this.display_inline = setting;
+};
 
 Adventure.prototype.setRootTemplate = function(template) {
   this.root_template = template;
@@ -46,6 +60,10 @@ Adventure.prototype.setStage = function(stage) {
 
 Adventure.prototype.setTitleHeader = function(title_header) {
   this.title_header = title_header;
+};
+
+Adventure.prototype.setPopup = function(popup) {
+  this.popup = popup;
 };
 
 Adventure.prototype.draggable = function(decorate_function) {
