@@ -19,7 +19,7 @@ function Adventure(map) {
   ].join('\n');
 
   this.content_template =
-  ['<div class="notes">{{{notes}}}</div><div class="fullsize-image"><img src="{{image}}"/></div>'
+  ['<div class="notes">{{{notes}}}</div><div class="fullsize-image"><img width="750px" src="{{image}}"/></div>'
   ].join('\n');
 }
 

@@ -1,7 +1,100 @@
 var adventure_map = {
     "root_header": "Hidden Knowledge",
-    "root": [{"name":"al-hewar","x":177,"y":-7},{"name":"cfd","x":1273,"y":385},{"name":"cfd-2","x":1115,"y":289},{"name":"chris-argyris","x":523,"y":371},{"name":"come-to-jesus","x":293,"y":341},{"name":"creativity-inc","x":975,"y":279},{"name":"horse","x":760,"y":285},{"name":"jesus","x":406,"y":228},{"name":"kumamon","x":22,"y":240},{"name":"march-story-wall","x":1271,"y":246},{"name":"new-wall-1","x":595,"y":222},{"name":"new-wall-2","x":1128,"y":145},{"name":"not-working","x":1011,"y":19},{"name":"old-wall","x":1330,"y":137},{"name":"power-of-habit","x":143,"y":160},{"name":"pre-friday-story-map","x":787,"y":170},{"name":"pub","x":766,"y":5},{"name":"queue-limits","x":962,"y":181},{"name":"red-queue","x":1199,"y":27},{"name":"say-it-and-solve-it","x":242,"y":185},{"name":"spec-workshop","x":397,"y":112},{"name":"walker","x":602,"y":45}],
+    "root": [{"name":"coffee","x":1299,"y":129},{"name":"chris-matts","x":1300,"y":231},{"name":"shell","x":750,"y":75},{"name":"error-chain","x":878,"y":68},{"name":"company","x":1018,"y":317},{"name":"by-example","x":1045,"y":476},{"name":"wall-james","x":893,"y":438},{"name":"primal-leadership","x":556,"y":247},{"name":"tuckman","x":592,"y":148},{"name":"inf","x":192,"y":156},{"name":"cmb-pws","x":193,"y":46},{"name":"al-hewar","x":1422,"y":157},{"name":"cfd","x":262,"y":350},{"name":"cfd-2","x":1165,"y":149},{"name":"chris-argyris","x":578,"y":395},{"name":"come-to-jesus","x":428,"y":286},{"name":"jesus","x":1546,"y":252},{"name":"kumamon","x":25,"y":36},{"name":"new-wall-1","x":891,"y":240},{"name":"new-wall-2","x":892,"y":340},{"name":"not-working","x":769,"y":339},{"name":"old-wall","x":261,"y":247},{"name":"power-of-habit","x":648,"y":247},{"name":"pre-friday-story-map","x":25,"y":322},{"name":"pub","x":25,"y":219},{"name":"queue-limits","x":1164,"y":274},{"name":"red-queue","x":1164,"y":353},{"name":"say-it-and-solve-it","x":139,"y":435},{"name":"spec-workshop","x":1039,"y":216},{"name":"walker","x":397,"y":126}],
     "options":[
+        {
+            "name": "guide",
+            "title": "Guide",
+            "content": {
+                "thumbnail": "assets/thumbnails/guide.jpg",
+                "image": "assets/fullsize/guide.jpg"
+            }
+        },
+        {
+            "name": "coffee",
+            "title": "Coffee",
+            "content": {
+                "thumbnail": "assets/thumbnails/coffee.jpg",
+                "image": "assets/fullsize/coffee.jpg"
+            }
+        },
+        {
+            "name": "chris-matts",
+            "title": "Chris Matts",
+            "content": {
+                "thumbnail": "assets/thumbnails/chris-matts.jpg",
+                "image": "assets/fullsize/chris-matts.jpg"
+            }
+        },
+        {
+            "name": "shell",
+            "title": "SHELL",
+            "content": {
+                "thumbnail": "assets/thumbnails/shell.jpg",
+                "image": "assets/fullsize/shell.jpg"
+            }
+        },
+        {
+            "name": "error-chain",
+            "title": "Error Chain",
+            "content": {
+                "thumbnail": "assets/thumbnails/error-chain.jpg",
+                "image": "assets/fullsize/error-chain.jpg"
+            }
+        },
+        {
+            "name": "company",
+            "title": "Company Demo",
+            "content": {
+                "thumbnail": "assets/thumbnails/company.jpg",
+                "image": "assets/fullsize/company.jpg"
+            }
+        },        {
+            "name": "wall-james",
+            "title": "James and the Story Map",
+            "content": {
+                "thumbnail": "assets/thumbnails/wall-james.jpg",
+                "image": "assets/fullsize/wall-james.jpg"
+            }
+        },        {
+            "name": "by-example",
+            "title": "Spec By Example Demo",
+            "content": {
+                "thumbnail": "assets/thumbnails/by-example.jpg",
+                "image": "assets/fullsize/by-example.jpg"
+            }
+        },
+        {
+            "name": "inf",
+            "title": "Infrastructure",
+            "content": {
+                "thumbnail": "assets/thumbnails/inf.png",
+                "image": "assets/fullsize/inf.png"
+            }
+        },        {
+            "name": "tuckman",
+            "title": "Tuckman",
+            "content": {
+                "thumbnail": "assets/thumbnails/tuckman.jpg",
+                "image": "assets/fullsize/tuckman.jpg"
+            }
+        },
+        {
+            "name": "primal-leadership",
+            "title": "Primal Leadership",
+            "content": {
+                "thumbnail": "assets/thumbnails/primal-leadership.jpg",
+                "image": "assets/fullsize/primal-leadership.jpg"
+            }
+        },
+        {
+            "name": "cmb-pws",
+            "title": "CMB PWS",
+            "content": {
+                "thumbnail": "assets/thumbnails/cmb-pws.jpg",
+                "image": "assets/fullsize/cmb-pws.jpg"
+            }
+        },
         {
             "name": "al-hewar",
             "title": "Al Hewar",
@@ -43,22 +136,6 @@ var adventure_map = {
             }
         },
         {
-            "name": "creativity-inc",
-            "title": "Creativity Inc",
-            "content": {
-                "thumbnail": "assets/thumbnails/creativity-inc.jpg",
-                "image": "assets/fullsize/creativity-inc.jpg"
-            }
-        },
-        {
-            "name": "horse",
-            "title": "Horse",
-            "content": {
-                "thumbnail": "assets/thumbnails/horse.jpg",
-                "image": "assets/fullsize/horse.jpg"
-            }
-        },
-        {
             "name": "jesus",
             "title": "Jesus",
             "content": {
@@ -72,14 +149,6 @@ var adventure_map = {
             "content": {
                 "thumbnail": "assets/thumbnails/kumamon.jpg",
                 "image": "assets/fullsize/kumamon.jpg"
-            }
-        },
-        {
-            "name": "march-story-wall",
-            "title": "march-story-wall.jpg",
-            "content": {
-                "thumbnail": "assets/thumbnails/march-story-wall.jpg",
-                "image": "assets/fullsize/march-story-wall.jpg"
             }
         },
         {
@@ -135,7 +204,7 @@ var adventure_map = {
             "name": "pub",
             "content": {
                 "thumbnail": "assets/thumbnails/pub.jpg",
-                "image": "assets/fullsize/pre-friday-story-map.jpg"
+                "image": "assets/fullsize/pub.jpg"
             }
         },
         {

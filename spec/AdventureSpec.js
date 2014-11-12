@@ -42,6 +42,7 @@ describe("Adventure", function() {
     ]};
 
     adventure = new Adventure(map);
+    adventure.displayInline(true);
     crossroads.removeAllRoutes();
   });
 
