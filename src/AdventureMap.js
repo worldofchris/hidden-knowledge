@@ -1,5 +1,7 @@
 var adventure_map = {
-    "root_header": "Hidden Knowledge",
+    "root_header": 'This is the electronic version of the <a href="www.lkce14.com/sessions/#hidden">Discovering Hidden Knowledge</a> talk ' +
+                   'which <a href="https://twitter.com/james_macleod">James Macleod</a> and <a href="https://twitter.com/worldofchris">Chris Young</a> ' +
+                   'presented at <a href="http://www.lkce14.com/">LKCE14</a>.',
     "root": [{"name":"coffee","x":1299,"y":129},{"name":"chris-matts","x":1300,"y":231},{"name":"shell","x":750,"y":75},{"name":"error-chain","x":878,"y":68},{"name":"company","x":1018,"y":317},{"name":"by-example","x":1045,"y":476},{"name":"wall-james","x":893,"y":438},{"name":"primal-leadership","x":556,"y":247},{"name":"tuckman","x":592,"y":148},{"name":"inf","x":192,"y":156},{"name":"cmb-pws","x":193,"y":46},{"name":"al-hewar","x":1422,"y":157},{"name":"cfd","x":262,"y":350},{"name":"cfd-2","x":1165,"y":149},{"name":"chris-argyris","x":578,"y":395},{"name":"come-to-jesus","x":428,"y":286},{"name":"jesus","x":1546,"y":252},{"name":"kumamon","x":25,"y":36},{"name":"new-wall-1","x":891,"y":240},{"name":"new-wall-2","x":892,"y":340},{"name":"not-working","x":769,"y":339},{"name":"old-wall","x":261,"y":247},{"name":"power-of-habit","x":648,"y":247},{"name":"pre-friday-story-map","x":25,"y":322},{"name":"pub","x":25,"y":219},{"name":"queue-limits","x":1164,"y":274},{"name":"red-queue","x":1164,"y":353},{"name":"say-it-and-solve-it","x":139,"y":435},{"name":"spec-workshop","x":1039,"y":216},{"name":"walker","x":397,"y":126}],
     "options":[
         {

@@ -130,15 +130,6 @@ describe("Adventure", function() {
 
   });
 
-  it("should present the notes along with the content", function() {
-
-  });
-
-  it("should still display content even if there are no notes", function() {
-
-  });
-
-
   it("should not explode if there is no content in a node", function() {
 
     var node = adventure.node("does-not-exist");

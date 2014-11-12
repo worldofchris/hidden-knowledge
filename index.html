@@ -104,11 +104,9 @@
 
         $(document).ready(function() {
             var adventure = new Adventure(adventure_map);
-            var popup = new Popup();
-            popup.show();
+            adventure.displayInline(true);
             adventure.setStage($("#stage"));
             adventure.setTitleHeader($("#header"));
-            adventure.setPopup(popup);
 
             start(adventure);
             // Home means home
