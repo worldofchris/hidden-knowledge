@@ -66,18 +66,6 @@ Adventure.prototype.setPopup = function(popup) {
   this.popup = popup;
 };
 
-Adventure.prototype.draggable = function(decorate_function) {
-  for (var i=0; i < this.map.root.length; i++) {
-
-        // This seems messy and un-encapsulated.  How do we get it to work via 
-        // the stage?
-
-        var option = document.getElementById(this.map.root[i].name);
-        // var option = this.stage.find('#' + this.map.root[i].name);
-        interact(option).draggable({onmove: decorate_function}).inertia(true);
-      }
-};
-
 Adventure.prototype.root = function() {
 
   var self = this; // It's all about the context...

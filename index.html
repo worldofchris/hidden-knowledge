@@ -24,7 +24,7 @@
 
         background-color: #29e;
         color: white;
-        
+
         border: solid 0.4em #666;
         border-radius: 0.75em;
         padding: 5px;
@@ -41,7 +41,7 @@
 
         background-color: white;
         color: black;
-        
+
         border: solid 0.4em #666;
         border-radius: 0.75em;
         padding: 5px;
@@ -73,8 +73,6 @@
 
     <script src="lib/showdown.js"></script>
 
-    <script src="lib/interact.js"></script>
-
     <script>
 
         function dumpCoOrds() {
@@ -82,11 +80,11 @@
             $( ".option" ).each(function( index ) {
               var x_offset = parseInt(($(this).attr('data-x'))) || 0;
               var y_offset = parseInt(($(this).attr('data-y'))) || 0;
-              detail = {name: $(this).attr('id'), 
+              detail = {name: $(this).attr('id'),
                         x: parseInt($(this).css('left').substring(0, $(this).css('left').length-2)) + x_offset,
                         y: parseInt($(this).css('top').substring(0, $(this).css('top').length-2)) + y_offset}
-              details.push(detail);  
-            }); 
+              details.push(detail);
+            });
             console.log(JSON.stringify(details));
         }
         function makeDraggable(event) {
@@ -123,12 +121,10 @@
             }
             hasher.initialized.add(parseHash); //parse initial hash
             hasher.changed.add(parseHash); //parse hash changes
-             
+
             hasher.init(); //start listening for hash changes
 
-            adventure.draggable(makeDraggable);
-
-        })        
+        })
 
     </script>
 </body>
